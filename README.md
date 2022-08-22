@@ -451,3 +451,61 @@ Tracker::logEvents()
 ```php
 Tracker::logIsEnabled()
 ```
+#### 取得追蹤總頁數
+```php
+Tracker::pageViews($minutes, $results = true)
+//$minutes 查看幾分鐘內的事件
+//$results 是否取得結果
+```
+```json
+[
+    {
+        "date":"2022-08-22",
+        "total":"56"
+    }
+]
+```
+#### 取得國家追蹤總頁數
+```php
+Tracker::pageViewsByCountry($minutes, $results = true)
+//$minutes 查看幾分鐘內的事件
+//$results 是否取得結果
+```
+```json
+[
+    {
+        "label":"Japan",
+        "value":"58"
+     }
+]
+```
+#### 是否開啟artisan指令
+```php
+Tracker::allowConsole()
+```
+```boolean
+true
+```
+#### 是否開啟正則匹配
+```php
+Tracker::parserIsAvailable()
+```
+```boolean
+true
+```
+#### 使否使用相同已存在資料庫的route
+```php
+Tracker::routerMatched($log)
+```
+```boolean
+1(Int)
+```
+#### 取得該uuid 的session
+```php
+Tracker::sessionLog($uuid, $results = true)
+//$uuid 對應tracker_sessions.uuid
+//$results 是否取得結果
+```
+```boolean
+1(Int)
+```
