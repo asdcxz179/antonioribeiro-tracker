@@ -402,3 +402,52 @@ Tracker::getUserId()
 ```
 1(Int)
 ```
+#### 使否開啟追蹤功能
+```php
+Tracker::isEnabled()
+```
+```boolean
+false
+```
+#### 是否為爬蟲機器人
+```php
+Tracker::isRobot()
+```
+```boolean
+false
+```
+#### 是否有符合所需的追蹤資訊
+```php
+Tracker::isTrackable()
+```
+```boolean
+true
+```
+#### 是否為可追蹤的環境
+```php
+Tracker::isTrackableEnvironment()
+```
+```boolean
+true
+```
+#### 是否有可追蹤的IP
+```php
+Tracker::isTrackableIp()
+```
+```boolean
+true
+```
+#### 取得要追蹤的route name
+```php
+Tracker::logByRouteName($name,$minutes = null)
+//$name route名
+//$minutes 查看幾分鐘內的事件
+```
+#### 取得要追蹤事件
+```php
+Tracker::logEvents()
+```
+#### LOG是否開啟
+```php
+Tracker::logIsEnabled()
+```
