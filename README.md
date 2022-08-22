@@ -209,7 +209,7 @@ Tracker::currentSession()
         }
     }
 ```
-#### 查看所有發生錯誤的請求
+#### 查看發生錯誤的請求
 ```php
 Tracker::errors($minutes, $results = true)
 //$minutes 查看幾分鐘內的錯誤
@@ -261,4 +261,20 @@ Tracker::errors($minutes, $results = true)
             }
         }
     ]
+```
+#### 查看發生事件
+```php
+Tracker::errors($minutes, $results = true)
+//$minutes 查看幾分鐘內的事件
+//$results 是否取得結果
+```
+
+```json
+[
+    {
+        "id":1,
+        "name":"auth.login"//事件名稱,
+        "total":"17"//次數
+    }
+]   
 ```
