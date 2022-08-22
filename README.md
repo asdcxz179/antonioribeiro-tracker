@@ -278,3 +278,74 @@ Tracker::events($minutes, $results = true)
     }
 ]   
 ```
+#### 取得AgentId
+```php
+Tracker::getAgentId()
+//對應tracker_agents.id
+```
+```
+1(Int)
+```
+#### 取得Tracker設定
+```php
+Tracker::getConfig($key)
+//對應config/tracker.php key
+```
+#### 取得CookieId
+```php
+Tracker::getCookieId()
+//對應tracker_cookies.id
+```
+```
+1(Int)
+```
+#### 取得DeviceId
+```php
+Tracker::getDeviceId()
+//對應tracker_devices.id
+```
+```
+1(Int)
+```
+#### 取得LanguageId
+```php
+Tracker::getLanguageId()
+//對應tracker_languages.id
+```
+```
+1(Int)
+```
+#### 取得DomainId
+```php
+Tracker::getDomainId()
+//對應tracker_domains.id
+```
+```
+1(Int)
+```
+#### 取得GeoIpId
+```php
+Tracker::getGeoIpId()
+//對應tracker_geoip.id
+```
+```
+1(Int)
+```
+#### 取得LogData
+```php
+Tracker::getLogData()
+//對應tracker_geoip.id
+```
+```json
+{
+    "session_id":7,
+    "method":"GET",
+    "path_id":1,
+    "query_id":null,
+    "referer_id":null,
+    "is_ajax":false,
+    "is_secure":false,
+    "is_json":false,
+    "wants_json":false
+}
+```
