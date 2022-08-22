@@ -264,7 +264,7 @@ Tracker::errors($minutes, $results = true)
 ```
 #### 查看發生事件
 ```php
-Tracker::errors($minutes, $results = true)
+Tracker::events($minutes, $results = true)
 //$minutes 查看幾分鐘內的事件
 //$results 是否取得結果
 ```
