@@ -506,7 +506,7 @@ Tracker::sessionLog($uuid, $results = true)
 //$uuid 對應tracker_sessions.uuid
 //$results 是否取得結果
 ```
-```boolean
+```json
 [
     {
         "session_id":7,
@@ -527,7 +527,7 @@ Tracker::sessions($minutes, $results = true)
 //$minutes 查看幾分鐘內的session
 //$results 是否取得結果
 ```
-```boolean
+```json
 [
     {
         "id":7,
