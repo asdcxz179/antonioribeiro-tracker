@@ -349,3 +349,56 @@ Tracker::getLogData()
     "wants_json":false
 }
 ```
+#### 取得紀錄logger Provider
+```php
+Tracker::getLogger()
+//對應本地laravel log
+```
+#### 取得PathId
+```php
+Tracker::getPathId()
+//對應tracker_paths.id
+```
+```
+1(Int)
+```
+#### 取得QueryId
+```php
+Tracker::getQueryId()
+//對應tracker_queries.id
+```
+```
+1(Int)
+```
+#### 取得RefererId
+```php
+Tracker::getRefererId()
+//對應tracker_referers.id
+```
+```
+1(Int)
+```
+#### 取得RoutePathId
+```php
+Tracker::getRoutePathId()
+//對應tracker_route_paths.id
+```
+```
+1(Int)
+```
+#### 取得SessionId
+```php
+Tracker::getSessionId()
+//對應tracker_sessions.id
+```
+```
+1(Int)
+```
+#### 取得UserId
+```php
+Tracker::getUserId()
+//對應members.rowid
+```
+```
+1(Int)
+```
