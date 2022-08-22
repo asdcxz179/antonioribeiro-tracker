@@ -211,7 +211,9 @@ Tracker::currentSession()
 ```
 #### 查看所有發生錯誤的請求
 ```php
-Tracker::errors()
+Tracker::errors($minutes, $results = true)
+//$minutes 查看幾分鐘內的錯誤
+//$results 是否取得結果
 ```
 ```json
     [
